@@ -285,7 +285,7 @@ const timelineData = [
   { ay: 'Kasım',  num: '24', img: 'images/2.jpeg', title:'Kıpır Kıpır 🤗',    text:'Bu gün çekildiğimiz fotoğraflara bakınca içim hep kıpır kıpır oluyor sevgilim'},
   { ay: 'Aralık',  num: '22', img: 'images/3.jpeg', title:'Gözler Yalan Söylemez 🙂‍↔️',    text:'Nasıl da aşık aşık bakıyoruz birbirimize sevgilim'},
   { ay: 'Ocak',  num: '25', img: 'images/4.jpeg', title:'Vibe 😌',      text:"Buradaki vibe'ımıza bayılıyorum aşkım, farklı bi aura var sanki"},
-  { ay: 'Şubat',  num: '23', img: 'images/5.JPG', title:'Zorlayıcıydım 🙂‍↕️',     text:'Gün boyu bütün huysuzluklarıma katlandığın için teşekkür ederim askiiiim, çok güzel bir gündüüüü'},
+  { ay: 'Şubat',  num: '23', img: 'images/5.jpeg', title:'Zorlayıcıydım 🙂‍↕️',     text:'Gün boyu bütün huysuzluklarıma katlandığın için teşekkür ederim askiiiim, çok güzel bir gündüüüü'},
   { ay: 'Mart',num: '4', img: 'images/6.jpeg', title:'Sonsuz Artı Sonsuz ♾️',   text:'Seninle geçecek her an benim için = sonsuz artı sonsuz mutluluk askitelaam'},
   { ay: 'Nisan', num: '28', img: 'images/7.jpeg', title:'Sesli Sesli 👩🏽‍❤️‍💋‍👨🏻',      text:'Seni ömrümün sonuna kadar sesli ve hissli öpmeye hep devam edeceğim yavrum'},
   { ay: 'Mayıs',num: '2', img: 'images/8.jpeg', title:'Bakış 😉',        text:'Sana hep böyle uzunca ve aşkla bakacağım hayatımın anlamı'},
