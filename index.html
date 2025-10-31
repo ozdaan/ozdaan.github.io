@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bizim 2. Yılımız 💕</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Floating Hearts Background -->
+  <div class="floating-hearts" id="hearts-container"></div>
+  <!-- Sparkles -->
+  <div class="sparkles" id="sparkles-container"></div>
+  <!-- Confetti -->
+  <canvas id="confetti-canvas"></canvas>
+
+<!-- ===== ÇİÇEK AÇILIŞ OVERLAY ===== -->
+<div class="modal-overlay" id="modal">
+  <!-- Tüm ekranı kaplayan çiçek alanı -->
+  <div id="flower-field" aria-hidden="true"></div>
+
+  <div>
+    <div class="hero" id="hero" aria-label="Tıkla ve içeri gir" role="button" tabindex="0">
+      <div class="hero-glow"></div>
+      <div id="particles"></div>
+    </div>
+
+    <!-- click-instruction satırı tamamen kaldırıldı -->
+
+    <div style="text-align:center;">
+      <button class="close-modal-btn" id="closeBtn">Tıkla bakalım fıstıkııımmm 💕</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Header -->
+  <div class="header">
+    <h1>💕💕💕 2. Yılımız Kutlu Olsun Dadlu Fıstıkımmm 💕💕💕</h1>
+    <p>Seninle geçen 730 gün, 17.530 saat, her anı özel...</p>
+  </div>
+
+  <!-- ÜST MARQUEE (6 Foto) -->
+  <section class="marquee" id="marquee-top">
+    <div class="lane" data-dir="1" data-speed="26">
+      <div class="track">
+        <img src="images/32.jpg" alt="Foto 1">
+        <img src="images/33.jpeg" alt="Foto 2">
+        <img src="images/34.jpeg" alt="Foto 3">
+        <img src="images/35.jpeg" alt="Foto 4">
+        <img src="images/36.jpeg" alt="Foto 5">
+        <img src="images/37.jpg" alt="Foto 6">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORTA: AY BAZLI TIMELINE (merkez çubuk) ===== -->
+  <section class="timeline-centered" id="timeline">
+    <h2 class="month-title"> Bizim Hikayemiz </h2>
+
+    <!-- Dikey eksen -->
+    <div class="timeline-axis">
+      <span class="axis-progress" id="axisProgress"></span>
+    </div>
+
+    <!-- JS burada satırları oluşturacak -->
+    <div class="timeline-rows" id="timelineRows"></div>
+  </section>
+
+  <!-- ALT MARQUEE (6 Foto) -->
+  <section class="marquee" id="marquee-bottom">
+    <div class="lane" data-dir="-1" data-speed="28">
+      <div class="track">
+        <img src="images/27.jpg" alt="Foto 7">
+        <img src="images/9.jpg" alt="Foto 8">
+        <img src="images/28.jpg" alt="Foto 9">
+        <img src="images/29.jpg" alt="Foto 10">
+        <img src="images/30.jpeg" alt="Foto 11">
+        <img src="images/31.jpg" alt="Foto 12">
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">Hayatımın en güzel anılarıyla dolu bir yıl daha geride kaldı seni çok ama çooook seviyorummmm sevgiliiimm 🤍</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
