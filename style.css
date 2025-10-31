@@ -106,12 +106,6 @@ body {
 @keyframes float{ 0%,100%{ transform: translateY(0) } 50%{ transform: translateY(-10px) } }
 @keyframes glow{ 0%,100%{ filter: drop-shadow(0 0 10px rgba(255,235,59,.45)); } 50%{ filter: drop-shadow(0 0 22px rgba(255,235,59,.85)); } }
 
-.click-instruction {
-  text-align: center; margin-top: 20px; color: #7a2b58; font-size: 1.05em;
-  text-shadow: 0 2px 4px rgba(255,255,255,0.45); animation: pulse 2s infinite;
-}
-@keyframes pulse { 0%,100%{opacity:1; transform:scale(1)} 50%{opacity:.7; transform:scale(1.05)} }
-
 .close-modal-btn {
   margin-top: 18px;
   background: linear-gradient(135deg, #ff6aa8, #ff94c6);
@@ -225,6 +219,45 @@ body {
 .tl-node small{
   position: absolute; top: 100%; transform: translateY(6px);
   font-size: 12px; color:#c23a73; letter-spacing: .5px; font-weight: 700;
+}
+
+/* Spotify embed alanları (kart içinde AYRI bölüm) */
+.tl-song {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(212,67,124,.35);
+}
+.tl-song iframe {
+  display: block;
+  width: 100%;
+  height: 152px; /* senin verdiğin yükseklik */
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(212,67,124,.25);
+  transition: transform .3s ease;
+}
+.tl-song iframe:hover { transform: scale(1.02); }
+.no-song {
+  text-align: center;
+  margin-top: 8px;
+  color: #c23a73;
+  font-style: italic;
+  font-size: 0.95em;
+}
+
+/* Playlist Alanı */
+.playlist {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  color: #c23a73;
+}
+.playlist h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #d4437c, #ff69b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Responsive */

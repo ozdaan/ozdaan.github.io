@@ -279,35 +279,34 @@ closeBtn.addEventListener('click', ()=> closeModalWithConfetti(closeBtn));
   });
 })();
 
-/* === Timeline verisi === */
+/* === Timeline verisi (spotify alanı eklendi) === */
 const timelineData = [
-  { ay: 'Ekim',   num: '19', img: 'images/1.jpeg', title:'İlk Date 🤍',    text:'O günden belliydi bu hikaye dadlu fıstıkım'},
-  { ay: 'Kasım',  num: '24', img: 'images/2.jpeg', title:'Kıpır Kıpır 🤗',    text:'Bu gün çekildiğimiz fotoğraflara bakınca içim hep kıpır kıpır oluyor sevgilim'},
-  { ay: 'Aralık',  num: '22', img: 'images/3.jpeg', title:'Gözler Yalan Söylemez 🙂‍↔️',    text:'Nasıl da aşık aşık bakıyoruz birbirimize sevgilim'},
-  { ay: 'Ocak',  num: '25', img: 'images/4.jpeg', title:'Vibe 😌',      text:"Buradaki vibe'ımıza bayılıyorum aşkım, farklı bi aura var sanki"},
-  { ay: 'Şubat',  num: '23', img: 'images/5.jpeg', title:'Zorlayıcıydım 🙂‍↕️',     text:'Gün boyu bütün huysuzluklarıma katlandığın için teşekkür ederim askiiiim, çok güzel bir gündüüüü'},
-  { ay: 'Mart',num: '4', img: 'images/6.jpeg', title:'Sonsuz Artı Sonsuz ♾️',   text:'Seninle geçecek her an benim için = sonsuz artı sonsuz mutluluk askitelaam'},
-  { ay: 'Nisan', num: '28', img: 'images/7.jpeg', title:'Sesli Sesli 👩🏽‍❤️‍💋‍👨🏻',      text:'Seni ömrümün sonuna kadar sesli ve hissli öpmeye hep devam edeceğim yavrum'},
-  { ay: 'Mayıs',num: '2', img: 'images/8.jpeg', title:'Bakış 😉',        text:'Sana hep böyle uzunca ve aşkla bakacağım hayatımın anlamı'},
-  { ay: 'Haziran',  num: '14', img: 'images/9.JPG', title:'Çiçeğim 🌸',   text:'Seninle yaptığımız her şey o kadar güzel hissettiriyor ki bana, hep daha fazlasını istiyorum hayatımm'},
-  { ay: 'Haziran',   num: '24', img: 'images/10.jpeg', title:'İstanbuull ve Şaşooooluğumuz 🤭', text:'Böyle şaşooo olmamızı çok seviyoruum (magnolya harikaydııı)'},
-  { ay: 'Eylül',  num: '1', img: 'images/11.jpeg', title:'10. Ayımız',   text:'Seninle geçen 10 ay o kadar güzeldi ki, hep dediğim gibi nice aylarımızaaa'},
-  { ay: 'Ekim',    num: '12', img: 'images/12.jpeg', title:'Çocuklaaar 🧑‍🧑‍🧒‍🧒',      text:'İşte çocuklarımıza göstereceğimiz o fotoğrafımız, çocuklar bakın annenize ne kadar güzel değil miii? Çok şanslıyım anneninze sahip olduğum içiinn'},
-  { ay: 'Kasım',    num: '1', img: 'images/13.jpg', title:'Bir Yıl 🤍',      text:'Her şeyin başladığı ve devam ettiği günün 1. yılı kutlu olsun aşkım! Seni çok seviyorum'},
-  { ay: 'Şubat',    num: '14', img: 'images/14.jpeg', title:'Sevgililer Günü 💌',      text:'Bir gün değil her gün, seninle geçen günüm hep sevgililer günü gibi hissediyorum hayatımmm'},
-  { ay: 'Mayıs',    num: '1', img: 'images/15.jpg', title:'1.5 Yılımız ♾️',      text:'Baaak askimm sen defterini yapmıştıııın, bende dijitalini yapayım dedim. Nice 1.5 yıllarımızaaa'},
-  { ay: 'Mayıs',    num: '27', img: 'images/16.jpg', title:'Şımarmak 🥹',      text:'Seninle şöyle şımara şımara vakit geçirmeyi o kadar özledimmm kii'},
-  { ay: 'Haziran',    num: '11', img: 'images/17.jpg', title:'Gülmek 😙',      text:'Seninle ömrümün sonuna kadar böyle gülmek istiyoruuumm hayatııım, yol arkadaşım'},
-  { ay: 'Haziran',    num: '18', img: 'images/18.jpg', title:'İzmiiit 😙',      text:"İlk İzmit'e geldiğiiin zamaaan buradaki hayatımı sana göstermek çok hoşuma gitmişti kendi şehrimde bile senin sayende yeni yerler öğrenmiştimmm"},
-  { ay: 'Haziran',    num: '25', img: 'images/19.jpg', title:'Haziraan ayı buluşma ayımıız olmusss 🤭',      text:"Bana falalelciyi denettiğin gündüü hehehe yine çok turlamıstıkkkkk"},
-  { ay: 'Temmuz',    num: '12', img: 'images/20.jpg', title:'Büyükadaaaa',      text:"Stajdaan kaçıpp yanına gelmiştimm çok yorulmuştuk hatta terden gebermiştim amaaa çok güzel bi gündüü. Hayatım seninle, en tepeye ulaştığımızda hissettiğimiz rüzgar gibi hissteriyor 🙂‍↔️"},
-  { ay: 'Temmuz',    num: '21', img: 'images/21.jpg', title:'Galata Kulesi 💍',      text:"Geleceği hep belli olan o gün gelmişti. Hayatımız da inanışta olduğu gibi hep mutlu, mesut ve çok güzel geçecek benim biricik sevgiliiimm"},
-  { ay: 'Ağustos',    num: '13', img: 'images/22.jpg', title:'Gülmek 🥲',      text:"Yine senin yanında yine çok mutluyuuuumm (keşke bir an önce yanında tekrardan gülebilsem)"},
-  { ay: 'Ağustos',    num: '31', img: 'images/23.jpg', title:'Öpmeeek 👩🏽‍❤️‍💋‍👨🏻',      text:"Bootcamp'ten sonraki buluşmamız. Seni gelip yine böyle öpmeeeek istiyoooooom çok özlemiştim şu an daha da çok özlediiiimmm"},
-  { ay: 'Ekim',    num: '2', img: 'images/24.jpg', title:'Fıstıkımınn doğum günüsüüü',      text:"Canımmm fıstıkımınn doğum günüsünü yanında kutlamak istemiştim amaa olsuun elimizdeki fırsatları değerlenirmek lazım değil miii? Nice mutlu yıllaraaa benim biriciikk sevgiliiimm"},
-  { ay: 'Ekim',    num: '4', img: 'images/25.jpg', title:'Gitmeden Önce Son Buluşmamız 🙂‍↕️',      text:"Uzun bir süre içindeki son buluşmamız ama ne olursa olsun ben bir sonraki buluşmamızı iplee çekiyorumm sevgiliiimm"},
-  { ay: 'Ekim',    num: '4', img: 'images/26.jpg', title:'Gitmeden Önce Son Buluşmamız 🙂‍↕',      text:"Bu kadar güzel zamanları bana yaşattığın ve yaşatmaya devam ettiğin için sana teşekkür ederim sevgilim.. Bu zaman kolay olmayacak, olmuyor da ama biz her şeyin üstesinden gelebilecek güce sahipiz bunu sakın unutmaaa. Seni çok ama çok seviyoruuum dadluu fıstıkııımmm 🤍"},
-  
+  { ay: 'Ekim',   num: '19', img: 'images/1.jpeg',  title:'İlk Date 🤍', text:'O günden belliydi bu hikaye dadlu fıstıkım', spotify: 'https://open.spotify.com/embed/track/5MAv1RGwsagnfxgzB1nYqz?utm_source=generator' },
+  { ay: 'Kasım',  num: '24', img: 'images/2.jpeg',  title:'Kıpır Kıpır 🤗', text:'Bu gün çekildiğimiz fotoğraflara bakınca içim hep kıpır kıpır oluyor sevgilim', spotify: 'https://open.spotify.com/embed/track/0raPeXeRFHkq1vrLPw6Xj8?utm_source=generator' },
+  { ay: 'Aralık', num: '22', img: 'images/3.jpeg',  title:'Gözler Yalan Söylemez 🙂‍↔️', text:'Nasıl da aşık aşık bakıyoruz birbirimize sevgilim', spotify: 'https://open.spotify.com/embed/track/6jQHBTdXEUx7LDjrkEiCax?utm_source=generator' },
+  { ay: 'Ocak',   num: '25', img: 'images/4.jpeg',  title:'Vibe 😌', text:"Buradaki vibe'ımıza bayılıyorum aşkım, farklı bi aura var sanki", spotify: 'https://open.spotify.com/embed/track/2LBqCSwhJGcFQeTHMVGwy3?utm_source=generator' },
+  { ay: 'Şubat',  num: '23', img: 'images/5.jpeg',  title:'Zorlayıcıydım 🙂‍↕️', text:'Gün boyu bütün huysuzluklarıma katlandığın için teşekkür ederim askiiiim, çok güzel bir gündüüüü', spotify: 'https://open.spotify.com/embed/track/6cjIlxXM1ca6nxkJ0p27jU?utm_source=generator' },
+  { ay: 'Mart',   num: '4',  img: 'images/6.jpeg',  title:'Sonsuz Artı Sonsuz ♾️', text:'Seninle geçecek her an benim için = sonsuz artı sonsuz mutluluk askitelaam', spotify: 'https://open.spotify.com/embed/track/0AHY9HLMYcbscA2s4KEiJc?utm_source=generator' },
+  { ay: 'Nisan',  num: '28', img: 'images/7.jpeg',  title:'Sesli Sesli 👩🏽‍❤️‍💋‍👨🏻', text:'Seni ömrümün sonuna kadar sesli ve hissli öpmeye hep devam edeceğim yavrum', spotify: 'https://open.spotify.com/embed/track/3FuVKtxVDmWFNJClkTyzmX?utm_source=generator' },
+  { ay: 'Mayıs',  num: '2',  img: 'images/8.jpeg',  title:'Bakış 😉', text:'Sana hep böyle uzunca ve aşkla bakacağım hayatımın anlamı', spotify: 'https://open.spotify.com/embed/track/4C2BEVMCOoTRYLQdxumczm?utm_source=generator' },
+  { ay: 'Haziran',num: '14', img: 'images/9.jpeg',   title:'Çiçeğim 🌸', text:'Seninle yaptığımız her şey o kadar güzel hissettiriyor ki bana, hep daha fazlasını istiyorum hayatımm', spotify: 'https://open.spotify.com/embed/track/0CAfuar3aEp8q9mKu99al9?utm_source=generator' },
+  { ay: 'Haziran',num: '24', img: 'images/10.jpeg', title:'İstanbuull ve Şaşooooluğumuz 🤭', text:'Böyle şaşooo olmamızı çok seviyoruum (magnolya harikaydııı)', spotify: 'https://open.spotify.com/embed/track/62QJlc5UNrMSl8sgIr6BYM?utm_source=generator' },
+  { ay: 'Eylül',  num: '1',  img: 'images/11.jpeg', title:'10. Ayımız', text:'Seninle geçen 10 ay o kadar güzeldi ki, hep dediğim gibi nice mutlu aylarımızaaa', spotify: 'https://open.spotify.com/embed/track/5OXHB3ukNhqtJNu47jDdGx?utm_source=generator' },
+  { ay: 'Ekim',   num: '12', img: 'images/12.jpeg', title:'Çocuklaaar 🧑‍🧑‍🧒‍🧒', text:'İşte çocuklarımıza göstereceğimiz o fotoğrafımız, çocuklar bakın annenize ne kadar güzel değil miii? Çok şanslıyım anneninze sahip olduğum içiinn', spotify: 'https://open.spotify.com/embed/track/6V38G2xp1nWlRH1Nz1ranJ?utm_source=generator' },
+  { ay: 'Kasım',  num: '1',  img: 'images/13.jpg',  title:'Bir Yıl 🤍', text:'Her şeyin başladığı ve devam ettiği günün 1. yılı kutlu olsun aşkım! Seni çok seviyorum', spotify: 'https://open.spotify.com/embed/track/2Tv2XmPGs0A8esmc4gBkX4?utm_source=generator' },
+  { ay: 'Şubat',  num: '14', img: 'images/14.jpeg', title:'Sevgililer Günü 💌', text:'Bir gün değil her gün, seninle geçen günüm hep sevgililer günü gibi hissediyorum hayatımmm', spotify: 'https://open.spotify.com/embed/track/2RIeJ5AsGAveACtbnxyyAk?utm_source=generator' },
+  { ay: 'Mayıs',  num: '1',  img: 'images/15.jpg',  title:'1.5 Yılımız ♾️', text:'Baaak askimm sen defterini yapmıştıııın, bende dijitalini yapayım dedim. Nice 1.5 yıllarımızaaa', spotify: 'https://open.spotify.com/embed/track/633Y6jn9RSYF8ivr9QDIYH?utm_source=generator' },
+  { ay: 'Mayıs',  num: '27', img: 'images/16.jpg',  title:'Şımarmak 🥹', text:'Seninle şöyle şımara şımara vakit geçirmeyi o kadar özledimmm kii', spotify: 'https://open.spotify.com/embed/track/7ghVCUCGqdIyRfcTZyyxU8?utm_source=generator' },
+  { ay: 'Haziran',num: '11', img: 'images/17.jpg',  title:'Gülmek 😙', text:'Seninle ömrümün sonuna kadar böyle gülmek istiyoruuumm hayatııım, yol arkadaşım', spotify: 'https://open.spotify.com/embed/track/5n1MwdIRqFtsFO4qp86USa?utm_source=generator' },
+  { ay: 'Haziran',num: '18', img: 'images/18.jpg',  title:'İzmiiit 😙', text:"İlk İzmit'e geldiğiiin zamaaan buradaki hayatımı sana göstermek çok hoşuma gitmişti kendi şehrimde bile senin sayende yeni yerler öğrenmiştimmm", spotify: 'https://open.spotify.com/embed/track/5Lzm844Yefk0pwqSWS0T1H?utm_source=generator' },
+  { ay: 'Haziran',num: '25', img: 'images/19.jpg',  title:'Haziraan ayı buluşma ayımıız olmusss 🤭', text:"Bana falalelciyi denettiğin gündüü hehehe yine çok turlamıstıkkkkk", spotify: 'https://open.spotify.com/embed/track/2GrTekjkIQyE6fDkdpmjxD?utm_source=generator' },
+  { ay: 'Temmuz', num: '12', img: 'images/20.jpg',  title:'Büyükadaaaa', text:"Stajdaan kaçıpp yanına gelmiştimm çok yorulmuştuk hatta terden gebermiştim amaaa çok güzel bi gündüü. Hayatım seninle, en tepeye ulaştığımızda hissettiğimiz rüzgar gibi hissteriyor 🙂‍↔️", spotify: 'https://open.spotify.com/embed/track/5kbX6QlSDGgprK3jVuxGt7?utm_source=generator' },
+  { ay: 'Temmuz', num: '21', img: 'images/21.jpg',  title:'Galata Kulesi 💍', text:"Geleceği hep belli olan o gün gelmişti. Hayatımız da inanışta olduğu gibi hep mutlu, mesut ve çok güzel geçecek benim biricik sevgiliiimm", spotify: 'https://open.spotify.com/embed/track/2ipNyTcdbr2oJhNtgE91vD?utm_source=generator' },
+  { ay: 'Ağustos',num: '13', img: 'images/22.jpg',  title:'Gülmek 🥲', text:"Yine senin yanında yine çok mutluyuuuumm (keşke bir an önce yanında tekrardan gülebilsem)", spotify: 'https://open.spotify.com/embed/track/5T4DlSBcqRhKdUljhPFb5D?utm_source=generator' },
+  { ay: 'Ağustos',num: '31', img: 'images/23.jpg',  title:'Öpmeeek 👩🏽‍❤️‍💋‍👨🏻', text:"Bootcamp'ten sonraki buluşmamız. Seni gelip yine böyle öpmeeeek istiyoooooom çok özlemiştim şu an daha da çok özlediiiimmm", spotify: 'https://open.spotify.com/embed/track/45LpIgOnh3OryDAuYXqTkp?utm_source=generator' },
+  { ay: 'Ekim',   num: '2',  img: 'images/24.jpg',  title:'Fıstıkımınn doğum günüsüüü', text:"Canımmm fıstıkımınn doğum günüsünü yanında kutlamak istemiştim amaa olsuun elimizdeki fırsatları değerlenirmek lazım değil miii? Nice mutlu yıllaraaa benim biriciikk sevgiliiimm", spotify: 'https://open.spotify.com/embed/track/20bfCJHvuoPdziZacHdvNe?utm_source=generator' },
+  { ay: 'Ekim',   num: '4',  img: 'images/25.jpg',  title:'Gitmeden Önce Son Buluşmamız 🙂‍↕️', text:"Uzun bir süre içindeki son buluşmamız ama ne olursa olsun ben bir sonraki buluşmamızı iplee çekiyorumm sevgiliiimm", spotify: 'https://open.spotify.com/embed/track/27t7YHIlw0u1uVO302wpvD?utm_source=generator' },
+  { ay: 'Ekim',   num: '4',  img: 'images/26.jpg',  title:'Gitmeden Önce Son Buluşmamız 🙂‍↕', text:"Bu kadar güzel zamanları bana yaşattığın ve yaşatmaya devam ettiğin için sana teşekkür ederim sevgilim.. Bu zaman kolay olmayacak, olmuyor da ama biz her şeyin üstesinden gelebilecek güce sahipiz bunu sakın unutmaaa. Seni çok ama çok seviyoruuum dadluu fıstıkııımmm 🤍", spotify: 'https://open.spotify.com/embed/track/1UfM6M97SVajxbvRkO9K6f?utm_source=generator"' },
 ];
 
 (function buildTimeline(){
@@ -320,7 +319,7 @@ const timelineData = [
     const row = document.createElement('div');
     row.className = 'tl-row';
 
-    // Node (numara + ay) - axis içine ekliyoruz (artık overflow:visible)
+    // Node (numara + ay)
     const node = document.createElement('div');
     node.className = 'tl-node';
     node.style.top = `calc(${(idx+1) * (100/(timelineData.length+1))}% + 0px)`;
@@ -338,7 +337,21 @@ const timelineData = [
 
     const card = document.createElement('div');
     card.className = 'tl-card';
-    card.innerHTML = `<h3>${item.ay} — ${item.title}</h3><p>${item.text}</p>`;
+    card.innerHTML = `
+      <h3>${item.ay} — ${item.title}</h3>
+      <p>${item.text}</p>
+      <div class="tl-song">
+        ${item.spotify ? `
+          <iframe
+            data-testid="embed-iframe"
+            style="border-radius:12px"
+            src="${item.spotify}"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+          </iframe>` : `<p class="no-song">🎵 Şarkı eklenecek 🎵</p>`}
+      </div>
+    `;
 
     if(isEven){ left.appendChild(media); right.appendChild(card); }
     else{ left.appendChild(card); right.appendChild(media); }
