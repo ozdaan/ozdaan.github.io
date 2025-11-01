@@ -150,12 +150,28 @@ body {
 @keyframes scrollX{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
 
 /* === Timeline: Merkez Çubuk + Alternatif Düzen (toz pembe) === */
-.timeline-centered{ max-width: 1200px; margin: 50px auto 80px; padding: 0 20px; position: relative; z-index: 10; }
-.timeline-centered .month-title{
-  text-align: center; font-size: 2.2em;
+.timeline-centered {
+  position: relative;
+}
+
+.timeline-centered .month-title {
+  position: relative;
+  text-align: center;
+  font-size: 2.5em;
   background: linear-gradient(135deg, #d4437c, #ff69b4);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-  margin-bottom: 36px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+  margin-bottom: 40px;
+  
+  /* yeni eklenen kısımlar 👇 */
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40px; /* ne kadar yukarıda olmasını istersen ayarla */
+  position: relative; /* transform çalışsın diye relative olmalı */
+  z-index: 3; /* axis'in üstünde kalsın */
 }
 
 /* eksen */
@@ -251,6 +267,8 @@ body {
   margin: 60px auto;
   text-align: center;
   color: #c23a73;
+  position: relative;
+  z-index: 10;
 }
 .playlist h2 {
   font-size: 2em;
